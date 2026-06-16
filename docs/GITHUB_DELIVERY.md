@@ -19,8 +19,8 @@ delivery. It is not an open-source project.
 
 Phase 25 GitHub status: create or use the private repository
 `ejikezebedee/zebepay`, set the local `origin` remote to that repository, and
-push the cleaned Zebepay source there. Do not push Zebepay into AgentPay or
-OpenBank repositories.
+push the cleaned Zebepay source there. Do not push Zebepay into any unrelated
+or legacy repository.
 
 ## Required GitHub Settings Before Buyer Delivery
 

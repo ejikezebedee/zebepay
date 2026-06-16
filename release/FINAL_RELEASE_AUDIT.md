@@ -147,22 +147,19 @@ Status: buyer-readiness closure passed for internal review. Public sale and buye
 - Updated repository references to
   `https://github.com/ejikezebedee/zebepay`.
 - Added `docs/BRAND_GOVERNANCE.md` to define Zebepay as the current product
-  identity and classify AgentPay/OpenBank names as legacy context only.
+  identity and block stale working names from buyer-facing material.
 - Added `docs/PHASE-024-ZEBEPAY-BRAND-ALIGNMENT.md` as the Phase 24 evidence
   note.
-- Naming audit after cleanup found no OpenBank or AgentPay references in
-  buyer-facing project files outside the approved brand-governance history
-  note.
+- Naming audit after cleanup found no stale product-name references in
+  buyer-facing project files.
 - Verification after this pass: `npm run build`, `npm run lint`, and
   `npm test` passed. API tests reported 37 passed and 1 opt-in live PostgreSQL
   smoke skipped; shared tests reported 2 passed.
 - Refreshed buyer ZIP artifact:
   `public-downloads/zebepay-v0.1.0-github-ready-20260616.zip`.
 - Wrote adjacent SHA-256 file for delivery integrity verification.
-- Moved old OpenBank-named public download artifacts to
-  `public-downloads/_legacy/openbank-ng/` and the old preview folder to
-  `projects/_legacy/openbank-ng/` so active Zebepay delivery paths are
-  separated from legacy material.
+- Moved old legacy public download artifacts and preview folders out of the
+  active Zebepay delivery paths.
 
 ## Commercial Cleanup
 
@@ -237,8 +234,8 @@ replacement for Paystack.
 ## Audit Result
 
 Phase 25 release audit result: Zebepay is prepared for a new private GitHub
-repository at `ejikezebedee/zebepay`. AgentPay and OpenBank are not delivery
-repositories for this product. Zebepay remains a closed commercial source-code
-product; public visibility, buyer access, release tagging, and release asset
-attachment remain gated by MD approval of final commercial terms, buyer access
-process, refund policy, repository visibility, and support scope.
+repository at `ejikezebedee/zebepay`. Unrelated and legacy repositories are not
+delivery repositories for this product. Zebepay remains a closed commercial
+source-code product; public visibility, buyer access, release tagging, and
+release asset attachment remain gated by MD approval of final commercial terms,
+buyer access process, refund policy, repository visibility, and support scope.

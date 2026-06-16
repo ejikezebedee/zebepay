@@ -14,9 +14,8 @@ Use one primary GitHub repository:
    - Contains the full source package: customer app, admin app, backend API, shared package, database migration, docs, sales material, release audit, screenshots, and validated buyer ZIP/hash.
    - Buyer access is granted only after payment confirmation, accepted license terms, approved support scope, and delivery record creation.
 
-Do not use AgentPay or OpenBank as the delivery repository for this product.
-Those names are historical/internal only and must not receive the Zebepay
-commercial release.
+Do not use unrelated or legacy repositories for this product. Only the approved
+private Zebepay repository should receive the commercial release.
 
 ## What Buyers See Before Payment
 

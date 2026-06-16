@@ -21,9 +21,8 @@ product prepared for controlled sale and buyer access.
 ## Repository Separation
 
 - `zebepay` is the active commercial product repository.
-- AgentPay remains historical/internal context only.
-- OpenBank remains historical/interim context only.
-- Zebepay source must not be pushed into AgentPay or OpenBank repositories.
+- Earlier internal working names remain historical context only.
+- Zebepay source must not be pushed into unrelated or legacy repositories.
 
 ## Sales Channel Direction
 

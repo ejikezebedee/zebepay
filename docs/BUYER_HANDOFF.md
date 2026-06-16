@@ -36,6 +36,21 @@ Zebepay is a commercial source-code platform for building Nigerian banking, wall
 7. Run `npm run smoke:postgres -- --seed`, then `npm run smoke:postgres`.
 8. Confirm `GET /ready` and `GET /v1/admin/production-readiness` before enabling production traffic.
 
+## Buyer Verification Commands
+
+Use these commands for the first buyer-side verification:
+
+```bash
+npm install --include=dev
+npm run build
+npm run lint
+npm test
+npm run smoke:postgres
+```
+
+If dependency audit advisories appear, record them as dependency-hardening
+items. Do not force breaking upgrades without MD approval.
+
 ## Buyer Responsibilities
 
 The buyer is responsible for:

@@ -10,29 +10,22 @@ assets, package metadata, and buyer handoff instructions.
 
 ## Decision
 
-Zebepay is the active product and repository identity.
-
-AgentPay is treated as an earlier working name from the historical marketplace
-and backend-service workstream. OpenBank NG is treated as an interim package
-name from the banking/wallet hardening workstream. Neither legacy name should
-be used as the buyer-facing product name for this GitHub release.
+Zebepay is the active product and repository identity. Earlier internal working
+names are not buyer-facing product names for this GitHub release.
 
 ## Work Completed
 
-- Renamed the active package directory from `projects/openbank-ng` to
-  `projects/zebepay`.
-- Updated root package metadata from `openbank-ng` to `zebepay`.
+- Renamed the active package directory to `projects/zebepay`.
+- Updated root package metadata to `zebepay`.
 - Updated GitHub repository references to
   `https://github.com/ejikezebedee/zebepay`.
-- Updated NPM workspace names and dependencies from `@openbank-ng/*` to
-  `@zebepay/*`.
+- Updated NPM workspace names and dependencies to `@zebepay/*`.
 - Updated app titles, service names, shared product constants, API imports, and
   TypeScript Fastify store naming to Zebepay.
-- Updated environment flags from `OPENBANK_` to `ZEBEPAY_`.
-- Updated demo credentials and sandbox examples from OpenBank naming to
-  Zebepay naming.
-- Renamed the marketplace product image reference from
-  `openbank-ng-product-cover.png` to `zebepay-product-cover.png`.
+- Updated environment flags to `ZEBEPAY_`.
+- Updated demo credentials and sandbox examples to Zebepay naming.
+- Renamed the marketplace product image reference to
+  `zebepay-product-cover.png`.
 - Updated buyer-facing docs, sales copy, release notes, support files, GitHub
   delivery files, and commercial package references to Zebepay.
 - Added `docs/BRAND_GOVERNANCE.md` to prevent future naming drift.

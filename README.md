@@ -8,7 +8,15 @@ This product is software only. Buyers are responsible for licensing, regulatory 
 
 ## Available For Private Sale
 
-Zebepay is a developed payment gateway and wallet platform available for private commercial sale. Pricing is flexible and can be set to any MD-approved amount based on the buyer package, source access, setup support, deployment support, or white-label customization required.
+Zebepay is a developed Nigerian wallet and banking infrastructure source-code
+foundation available for private commercial sale. Pricing is flexible and can be
+set to any MD-approved amount based on the buyer package, source access, setup
+support, deployment support, or white-label customization required.
+
+Zebepay should be delivered as a private commercial source-code product. A
+public wrapper may show the product summary, screenshots, buyer FAQ, and contact
+instructions, but the full source-code repository, buyer ZIP, release tags, and
+buyer access must remain gated by MD approval.
 
 Buyer-facing materials:
 
@@ -16,6 +24,9 @@ Buyer-facing materials:
 - [Buyer Sales Page](./docs/commercial/BUYER_SALES_PAGE.md)
 - [Pricing And Offer](./docs/commercial/PRICING_AND_OFFER.md)
 - [Buyer Demo Checklist](./docs/commercial/BUYER_DEMO_CHECKLIST.md)
+- [Public And Private Packaging Plan](./docs/PUBLIC_PRIVATE_PACKAGING_PLAN.md)
+- [Buyer Production Warning](./BUYER_PRODUCTION_WARNING.md)
+- [Buyer Evaluation Agreement](./BUYER_EVALUATION_AGREEMENT.md)
 
 ## Product Scope
 
@@ -89,6 +100,18 @@ Zebepay does not provide:
 - Legal or compliance certification
 
 The buyer must connect licensed providers and complete legal, compliance, security, and regulatory review before live use.
+
+## Buyer Verification Commands
+
+Approved buyers or evaluators should verify the package with:
+
+```bash
+npm install --include=dev
+npm run build
+npm run lint
+npm test
+npm run smoke:postgres
+```
 
 ## Development Status
 

@@ -173,5 +173,5 @@
 - Zebepay is classified as a closed commercial source-code product, not an
   open-source project.
 - New private GitHub repository target is `ejikezebedee/zebepay`.
-- AgentPay and OpenBank are not delivery repositories for Zebepay.
+- Unrelated and legacy repositories are not delivery repositories for Zebepay.
 - Sales-channel wording is generic controlled/private sales language only.
