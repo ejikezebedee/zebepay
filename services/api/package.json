@@ -1,0 +1,33 @@
+{
+  "name": "@zebepay/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Zebepay backend API and banking domain services.",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "Buyer delivery repository assigned during handoff"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "test": "ZEBEPAY_SANDBOX_SESSION_SECRET=test-zebepay-sandbox-session-secret tsx --test src/**/*.test.ts",
+    "test:postgres": "ZEBEPAY_SANDBOX_SESSION_SECRET=test-zebepay-sandbox-session-secret ZEBEPAY_RUN_POSTGRES_TESTS=true tsx --test src/repositories/postgresRepositories.test.ts",
+    "lint": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.0",
+    "@zebepay/shared": "0.1.0",
+    "fastify": "^5.0.0",
+    "pg": "^8.21.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.20.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

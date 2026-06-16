@@ -1,0 +1,23 @@
+{
+  "name": "zebepay",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nigerian banking and wallet infrastructure foundation.",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejikezebedee/zebepay.git"
+  },
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build -w @zebepay/shared && npm run build -w @zebepay/api && npm run build -w @zebepay/customer-web && npm run build -w @zebepay/admin-web",
+    "test": "npm run build -w @zebepay/shared && npm run test --workspaces --if-present",
+    "lint": "npm run build -w @zebepay/shared && npm run lint --workspaces --if-present",
+    "smoke:postgres": "ZEBEPAY_SANDBOX_SESSION_SECRET=test-zebepay-sandbox-session-secret tsx scripts/postgres-smoke.ts"
+  }
+}

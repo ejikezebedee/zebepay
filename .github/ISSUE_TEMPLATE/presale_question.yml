@@ -1,0 +1,48 @@
+name: Pre-sale question
+description: Ask a buyer evaluation or commercial fit question about Zebepay.
+title: "[Pre-sale]: "
+labels:
+  - pre-sale
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for buyer evaluation questions. Do not share secrets,
+        regulated provider credentials, real customer data, or private banking
+        information.
+  - type: input
+    id: buyer_profile
+    attributes:
+      label: Buyer profile
+      description: Founder, agency, developer, cooperative, licensed operator, or other.
+      placeholder: "Agency building a Nigerian wallet for a client"
+    validations:
+      required: true
+  - type: dropdown
+    id: interest
+    attributes:
+      label: Main interest
+      options:
+        - Sandbox demo / investor prototype
+        - Agency client delivery
+        - Licensed fintech launch foundation
+        - Cooperative or savings product
+        - Technical review before purchase
+        - Pricing or license question
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What do you need to know before purchase or evaluation?
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Boundary acknowledgement
+      options:
+        - label: I understand Zebepay is source-code software only, not a banking license or regulated payment provider.
+          required: true

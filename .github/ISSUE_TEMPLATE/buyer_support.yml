@@ -1,0 +1,74 @@
+name: Buyer support request
+description: Request setup or package support for an approved Zebepay buyer.
+title: "[Buyer Support]: "
+labels:
+  - buyer-support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for package access, setup, or first-run troubleshooting.
+        Do not post secrets, real customer data, private keys, production tokens,
+        bank credentials, or regulated provider credentials.
+  - type: input
+    id: buyer_status
+    attributes:
+      label: Buyer status
+      description: Purchased tier, evaluation status, or approved access type.
+      placeholder: "Tier 1 Builder / Tier 2 Commercial Launch / evaluation"
+    validations:
+      required: true
+  - type: input
+    id: node_version
+    attributes:
+      label: Node.js version
+      placeholder: "node -v"
+    validations:
+      required: true
+  - type: input
+    id: operating_system
+    attributes:
+      label: Operating system
+      placeholder: "macOS, Windows, Ubuntu, etc."
+    validations:
+      required: true
+  - type: dropdown
+    id: affected_area
+    attributes:
+      label: Affected area
+      options:
+        - Setup/install
+        - Customer web app
+        - Admin web app
+        - API service
+        - Database/schema
+        - Tests/build/lint
+        - Documentation
+        - GitHub/package access
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: command_output
+    attributes:
+      label: Command and output
+      description: Paste the command you ran and the relevant output.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected vs actual result
+      description: What did you expect, and what happened?
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I did not include secrets, real customer data, private keys, production tokens, or bank credentials.
+          required: true
+        - label: I understand this support channel does not provide legal, compliance, licensing, or live payment-rail approval.
+          required: true

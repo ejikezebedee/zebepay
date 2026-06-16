@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+.env
+.env.*
+!.env.example
+coverage/
+*.log
+*.tsbuildinfo
+*.sqlite
+*.db
+tmp/
+.runtime/
