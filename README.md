@@ -6,6 +6,17 @@ Zebepay is a commercial source-code product for fintech founders, agencies, deve
 
 This product is software only. Buyers are responsible for licensing, regulatory approval, banking/payment partners, production security audits, KYC/AML provider setup, and live payment rail authorization.
 
+## Available For Private Sale
+
+Zebepay is a developed payment gateway and wallet platform available for private commercial sale. Pricing is flexible and can be set to any MD-approved amount based on the buyer package, source access, setup support, deployment support, or white-label customization required.
+
+Buyer-facing materials:
+
+- [Commercial Buyer Pack](./docs/commercial/README.md)
+- [Buyer Sales Page](./docs/commercial/BUYER_SALES_PAGE.md)
+- [Pricing And Offer](./docs/commercial/PRICING_AND_OFFER.md)
+- [Buyer Demo Checklist](./docs/commercial/BUYER_DEMO_CHECKLIST.md)
+
 ## Product Scope
 
 Zebepay is designed as a serious source-code foundation with buyer-visible
